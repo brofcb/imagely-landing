@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Chrome icon placeholder">
+  <circle cx="32" cy="32" r="31" fill="#fff" stroke="#d5e6f5"/>
+  <path d="M32 32h28A28 28 0 0 0 12 12z" fill="#f6c643"/>
+  <path d="M32 32 18 56a28 28 0 0 0 42-20z" fill="#2dbf6d"/>
+  <path d="M32 32 12 12a28 28 0 0 0 6 44z" fill="#e4574f"/>
+  <circle cx="32" cy="32" r="12" fill="#4c8df6" stroke="#fff" stroke-width="2"/>
+</svg>

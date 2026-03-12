@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Imagely | Listing Image Downloader for eBay, Shopify & Ecommerce Sellers</title>
+    <meta
+      name="description"
+      content="Imagely is a fast listing image downloader for ecommerce sellers. Download product images from listing pages in seconds for eBay, Shopify, resale, and product research workflows."
+    />
+    <meta
+      name="keywords"
+      content="listing image downloader, product image downloader, download images from listings, ecommerce image downloader, eBay image downloader, Shopify image downloader, download product images"
+    />
+    <meta name="author" content="Imagely" />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#f7fbff" />
+    <link rel="canonical" href="https://imagely-extension.com/" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Imagely" />
+    <meta property="og:title" content="Imagely | Listing Image Downloader for Ecommerce Sellers" />
+    <meta
+      property="og:description"
+      content="Download product listing images faster with Imagely. Built for eBay sellers, Shopify merchants, resellers, and ecommerce teams."
+    />
+    <meta property="og:url" content="https://imagely-extension.com/" />
+    <meta property="og:image" content="https://imagely-extension.com/assets/screenshots/og-image.svg" />
+
+    <!-- Twitter/X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Imagely | Download Listing Images in Seconds" />
+    <meta
+      name="twitter:description"
+      content="A clean Chrome extension to download product listing images quickly for ecommerce workflows."
+    />
+    <meta name="twitter:image" content="https://imagely-extension.com/assets/screenshots/og-image.svg" />
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        let saved = null;
+        try {
+          saved = localStorage.getItem("imagely-theme");
+        } catch (error) {
+          saved = null;
+        }
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = saved || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Imagely",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome",
+        "description": "Imagely helps users download product listing images quickly from ecommerce pages.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "url": "https://imagely-extension.com/",
+        "sameAs": [
+          "https://chromewebstore.google.com/detail/djefalbecgndahenffjiapklnbnlkjln"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Sticky Header / Navigation -->
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand" aria-label="Imagely home">
+          <img src="assets/icons/imagely-mark.svg" alt="Imagely logo" width="34" height="34" />
+          <span>Imagely</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="mainNav" class="nav" aria-label="Primary navigation">
+          <a href="#demo">Screenshots</a>
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#plans">Plans</a>
+          <a href="#use-cases">Use Cases</a>
+          <a href="#faq">FAQ</a>
+          <button
+            type="button"
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+            aria-pressed="false"
+            title="Toggle dark mode"
+          >
+            <span class="toggle-track" aria-hidden="true">
+              <span class="toggle-icon toggle-icon-sun">☀</span>
+              <span class="toggle-icon toggle-icon-moon">☾</span>
+              <span class="toggle-thumb"></span>
+            </span>
+            <span class="sr-only">Toggle dark mode</span>
+          </button>
+          <a
+            href="https://chromewebstore.google.com/detail/djefalbecgndahenffjiapklnbnlkjln"
+            class="btn btn-sm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Install on Chrome
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero Section -->
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Chrome extension for ecommerce workflows</p>
+            <h1>Download listing images in seconds.</h1>
+            <p class="subhead">
+              Imagely scans listing pages, lets you filter and select the right images, and exports clean downloads or ZIP files with less manual work.
+            </p>
+
+            <div class="cta-group">
+              <a
+                href="https://chromewebstore.google.com/detail/djefalbecgndahenffjiapklnbnlkjln"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Install on Chrome
+              </a>
+              <a href="#demo" class="btn btn-ghost">Watch Demo</a>
+            </div>
+
+            <p class="microcopy">Built for online sellers, resellers, and ecommerce workflows.</p>
+
+            <div class="chrome-badge" role="group" aria-label="Chrome Web Store install area">
+              <img src="assets/icons/chrome-icon.svg" alt="Google Chrome icon" width="20" height="20" />
+              <div>
+                <p>Available on</p>
+                <strong>Chrome Web Store</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal delay-1" aria-label="Imagely extension preview">
+            <figure class="hero-shot">
+              <img src="assets/screenshots/Promo/collect-seconds.png" alt="Imagely extension scanning a listing and showing selectable product images" />
+              <figcaption>Preview Imagely on a real listing page.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Demo / Screenshot Gallery -->
+      <section class="section muted" id="demo">
+        <div class="container container-wide">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Demo</p>
+            <h2>See how Imagely works on real listing workflows.</h2>
+            <p class="section-subtext">Preview scanning, filtering, batch export, and flexible view modes before you install.</p>
+          </div>
+          <!-- Selected promotional images from assets/screenshots/promo -->
+          <div class="demo-carousel reveal" id="demoCarousel">
+            <button class="carousel-btn prev" type="button" aria-label="Previous screenshot">‹</button>
+            <div class="carousel-track-wrap">
+              <div class="carousel-track" id="carouselTrack">
+                <article class="demo-slide">
+                  <figure class="demo-card">
+                    <div class="demo-media">
+                      <img src="assets/screenshots/Promo/collect-seconds.png" alt="Imagely scans a listing and instantly shows selectable product images" loading="lazy" />
+                    </div>
+                    <figcaption>
+                      <h3>Smart scan + instant selection</h3>
+                      <p>Open a listing page and immediately review detected images.</p>
+                    </figcaption>
+                  </figure>
+                </article>
+                <article class="demo-slide">
+                  <figure class="demo-card">
+                    <div class="demo-media">
+                      <img src="assets/screenshots/Promo/filters-main.png" alt="Imagely filters listing images by size and file type for quality control" loading="lazy" />
+                    </div>
+                    <figcaption>
+                      <h3>Filter by size and file type</h3>
+                      <p>Quickly narrow results to the exact assets you want to keep.</p>
+                    </figcaption>
+                  </figure>
+                </article>
+                <article class="demo-slide">
+                  <figure class="demo-card">
+                    <div class="demo-media">
+                      <img src="assets/screenshots/Promo/batch-workspace.png" alt="Imagely batch workspace collecting multiple listings and exporting selected images" loading="lazy" />
+                    </div>
+                    <figcaption>
+                      <h3>Batch workspace + organized export</h3>
+                      <p>Collect multiple listings and export selected files with cleaner structure.</p>
+                    </figcaption>
+                  </figure>
+                </article>
+                <article class="demo-slide">
+                  <figure class="demo-card">
+                    <div class="demo-media">
+                      <img src="assets/screenshots/Promo/popup-view-modes.png" alt="Imagely in popup view and side panel view" loading="lazy" />
+                    </div>
+                    <figcaption>
+                      <h3>Popup and side panel modes</h3>
+                      <p>Use the view mode that best fits how you browse and process listings.</p>
+                    </figcaption>
+                  </figure>
+                </article>
+              </div>
+            </div>
+            <button class="carousel-btn next" type="button" aria-label="Next screenshot">›</button>
+            <div class="carousel-dots" id="carouselDots" aria-label="Carousel pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Problem / Pain Points Section -->
+      <section class="section muted" id="problem">
+        <div class="container narrow">
+          <div class="section-heading reveal">
+            <p class="eyebrow">The Problem</p>
+            <h2>Manual image saving slows down reseller execution.</h2>
+          </div>
+          <div class="pain-grid">
+            <article class="card reveal">
+              <h3>Too many clicks</h3>
+              <p>Saving images one by one eats time when you process listings every day.</p>
+            </article>
+            <article class="card reveal delay-1">
+              <h3>Quality checks are inconsistent</h3>
+              <p>Without quick type and resolution visibility, low-quality files slip into your workflow.</p>
+            </article>
+            <article class="card reveal delay-2">
+              <h3>Multi-listing work gets messy</h3>
+              <p>Batch collection without structure creates clutter and extra cleanup before publishing.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Features</p>
+            <h2>Focused tools to collect listing images faster and cleaner.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <div class="icon">⚡</div>
+              <h3>Scans the current listing page</h3>
+              <p>Finds listing images automatically from the product page you are viewing.</p>
+            </article>
+            <article class="feature-card reveal delay-1">
+              <div class="icon">🧭</div>
+              <h3>Type and resolution visibility</h3>
+              <p>Shows image file type and resolution for faster quality checks before export.</p>
+            </article>
+            <article class="feature-card reveal delay-2">
+              <div class="icon">🛍️</div>
+              <h3>Filter by size and file type</h3>
+              <p>Use size buckets and file-type filters to focus only on relevant images.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="icon">⏱️</div>
+              <h3>Select exactly what to keep</h3>
+              <p>Preview full-size images, choose precisely, and avoid unnecessary downloads.</p>
+            </article>
+            <article class="feature-card reveal delay-1">
+              <div class="icon">✨</div>
+              <h3>Single-click ZIP export</h3>
+              <p>Export selected images as one ZIP for cleaner file management and handoff.</p>
+            </article>
+            <article class="feature-card reveal delay-2">
+              <div class="icon">🔎</div>
+              <h3>Batch workflow in Pro</h3>
+              <p>Collect multiple listings, include/exclude entries, and export organized ZIP folders.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section class="section muted" id="how-it-works">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">How It Works</p>
+            <h2>From listing page to export in four clear steps.</h2>
+          </div>
+          <ol class="steps">
+            <li class="step reveal">
+              <span class="step-num">1</span>
+              <h3>Open a listing page</h3>
+              <p>Go to a supported listing page and open Imagely in side panel or popup mode.</p>
+            </li>
+            <li class="step reveal delay-1">
+              <span class="step-num">2</span>
+              <h3>Scan and filter</h3>
+              <p>Review found images, then filter by size bucket and file type.</p>
+            </li>
+            <li class="step reveal delay-2">
+              <span class="step-num">3</span>
+              <h3>Select and preview</h3>
+              <p>Open full-size previews and select only the images you want to keep.</p>
+            </li>
+            <li class="step reveal delay-3">
+              <span class="step-num">4</span>
+              <h3>Download or ZIP export</h3>
+              <p>Download selected files from the current page or export as ZIP for cleaner workflow.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Workflow and Interface Section -->
+      <section class="section" id="workflow">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Interface & Usability</p>
+            <h2>Built for practical reseller workflows and daily execution.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <div class="icon">🧩</div>
+              <h3>Two display modes</h3>
+              <p>Use Side Panel mode or Popup mode based on how you work on listing pages.</p>
+            </article>
+            <article class="feature-card reveal delay-1">
+              <div class="icon">🎓</div>
+              <h3>Guided tutorial</h3>
+              <p>Built-in onboarding helps new users understand the flow quickly.</p>
+            </article>
+            <article class="feature-card reveal delay-2">
+              <div class="icon">🌐</div>
+              <h3>Multi-language + RTL</h3>
+              <p>Supports multiple languages, including RTL layouts for Arabic and similar scripts.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="icon">🌓</div>
+              <h3>Light and dark mode</h3>
+              <p>Choose the interface style that matches your browser and work environment.</p>
+            </article>
+            <article class="feature-card reveal delay-1">
+              <div class="icon">📁</div>
+              <h3>Cleaner organization</h3>
+              <p>Keep files more structured for cross-listing, drafting, and team handoff.</p>
+            </article>
+            <article class="feature-card reveal delay-2">
+              <div class="icon">✅</div>
+              <h3>Less friction, better consistency</h3>
+              <p>Fewer manual steps means more reliable results and faster listing throughput.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Use Cases Section -->
+      <section class="section" id="use-cases">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Who It’s For</p>
+            <h2>Built for people who work with listings every day.</h2>
+          </div>
+          <div class="usecase-grid">
+            <article class="usecase-card reveal">
+              <h3>eBay Sellers</h3>
+              <p>Save listing images faster for sourcing, relisting, and inventory record cleanup.</p>
+            </article>
+            <article class="usecase-card reveal delay-1">
+              <h3>Shopify Sellers</h3>
+              <p>Collect and organize product visuals for store setup, merchandising, and drafting.</p>
+            </article>
+            <article class="usecase-card reveal delay-2">
+              <h3>Resellers</h3>
+              <p>Reduce repetitive image handling and keep exports consistent across marketplaces.</p>
+            </article>
+            <article class="usecase-card reveal">
+              <h3>Product Researchers</h3>
+              <p>Gather cleaner image sets quickly for competitive analysis and listing comparisons.</p>
+            </article>
+            <article class="usecase-card reveal delay-1">
+              <h3>Ecommerce Teams</h3>
+              <p>Use structured exports and optional batch flow for smoother internal handoffs.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Plan Section -->
+      <section class="section muted" id="plans">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Plans</p>
+            <h2>Start free and upgrade when you need unlimited + batch workflow.</h2>
+          </div>
+          <div class="pain-grid">
+            <article class="card reveal">
+              <h3>Free Plan</h3>
+              <p>Current-page downloads with a daily limit for lightweight usage and quick evaluation.</p>
+            </article>
+            <article class="card reveal delay-1">
+              <h3>Pro Plan</h3>
+              <p>Unlimited downloads plus batch workspace for multi-listing collection and organized ZIP export.</p>
+            </article>
+            <article class="card reveal delay-2">
+              <h3>Important setup notes</h3>
+              <p>Some sites require permissions to read listing images. For best multi-file downloading, disable Chrome's ask-to-save prompt or use ZIP mode.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Proof / Trust Section -->
+      <section class="section" id="social-proof">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Trust & Social Proof</p>
+            <h2>Designed for sellers and ecommerce professionals.</h2>
+          </div>
+
+          <div class="proof-top reveal">
+            <p class="proof-label">Placeholder trust area</p>
+            <p class="proof-copy">Add your Chrome rating, user count, and reseller marketplace logos here as soon as they’re available.</p>
+          </div>
+
+          <div class="testimonial-grid">
+            <blockquote class="testimonial reveal">
+              <p>“Placeholder review: Imagely helped me save hours every week while managing product listings.”</p>
+              <cite>Future eBay Seller Review</cite>
+            </blockquote>
+            <blockquote class="testimonial reveal delay-1">
+              <p>“Placeholder review: The workflow is clean, fast, and easy for our ecommerce operations team.”</p>
+              <cite>Future Ecommerce Team Review</cite>
+            </blockquote>
+            <blockquote class="testimonial reveal delay-2">
+              <p>“Placeholder review: Great for product research when I need images from multiple listings quickly.”</p>
+              <cite>Future Product Researcher Review</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="section muted" id="faq">
+        <div class="container narrow">
+          <div class="section-heading reveal">
+            <p class="eyebrow">FAQ</p>
+            <h2>Quick answers before you install.</h2>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item reveal" open>
+              <summary>What does Imagely do?</summary>
+              <p>Imagely scans listing pages, helps you filter and select images, and exports selected files or ZIP packages with less friction.</p>
+            </details>
+            <details class="faq-item reveal delay-1">
+              <summary>Who is it for?</summary>
+              <p>It’s built for eBay sellers, Shopify sellers, resellers, ecommerce teams, and product researchers who process listings regularly.</p>
+            </details>
+            <details class="faq-item reveal delay-2">
+              <summary>Does it work on listing pages?</summary>
+              <p>Yes. Imagely is designed for listing-page workflows. Some websites may require site permissions so images can be read correctly.</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>Can I export as one ZIP file?</summary>
+              <p>Yes. You can export selected images as a single ZIP file for easier file management and transfer.</p>
+            </details>
+            <details class="faq-item reveal delay-1">
+              <summary>How do I install it?</summary>
+              <p>Click any “Install on Chrome” button on this page to open the Chrome Web Store listing and add the extension.</p>
+            </details>
+            <details class="faq-item reveal delay-2">
+              <summary>Is it easy to use?</summary>
+              <p>Yes. The interface is task-focused and includes a guided tutorial to help new users start quickly.</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>Any settings recommended for multi-file downloads?</summary>
+              <p>For smoother multi-file downloads, disable Chrome's “Ask where to save each file before downloading” setting, or use ZIP mode.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA Section -->
+      <section class="section final-cta" id="install">
+        <div class="container final-cta-wrap reveal">
+          <h2>Save time downloading listing images.</h2>
+          <p>Find images, filter what matters, and export faster. Install Imagely on Chrome today.</p>
+          <a
+            href="https://chromewebstore.google.com/detail/djefalbecgndahenffjiapklnbnlkjln"
+            class="btn btn-primary btn-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Install on Chrome
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#top" class="brand footer-brand">
+            <img src="assets/icons/imagely-mark.svg" alt="Imagely logo" width="30" height="30" />
+            <span>Imagely</span>
+          </a>
+          <p class="copyright">© <span id="currentYear"></span> Imagely. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
