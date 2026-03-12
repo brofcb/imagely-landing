@@ -520,8 +520,7 @@ html[data-theme="dark"] .toggle-thumb {
 
 .pain-grid,
 .feature-grid,
-.usecase-grid,
-.testimonial-grid {
+.usecase-grid {
   display: grid;
   gap: 1rem;
 }
@@ -533,7 +532,6 @@ html[data-theme="dark"] .toggle-thumb {
 .card,
 .feature-card,
 .usecase-card,
-.testimonial,
 .step {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -544,8 +542,7 @@ html[data-theme="dark"] .toggle-thumb {
 .card,
 .feature-card,
 .usecase-card,
-.step,
-.testimonial {
+.step {
   padding: 1.25rem;
 }
 
@@ -722,24 +719,20 @@ html[data-theme="dark"] .toggle-thumb {
   margin-top: 0.4rem;
 }
 
-.testimonial-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
 }
 
-.testimonial {
+.proof-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem;
   display: grid;
   gap: 0.8rem;
-}
-
-.testimonial p {
-  font-size: 0.97rem;
-}
-
-.testimonial cite {
-  font-style: normal;
-  font-weight: 700;
-  color: var(--text);
-  font-size: 0.9rem;
 }
 
 /* =========================================================
@@ -889,7 +882,6 @@ html[data-theme="dark"] .demo-media {
   .feature-grid,
   .steps,
   .usecase-grid,
-  .testimonial-grid,
   .footer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -904,6 +896,10 @@ html[data-theme="dark"] .demo-media {
 
   .container-wide {
     width: min(1240px, calc(100% - 1.6rem));
+  }
+
+  .proof-grid {
+    grid-template-columns: 1fr;
   }
 
   .footer-grid {
@@ -947,7 +943,6 @@ html[data-theme="dark"] .demo-media {
   .feature-grid,
   .steps,
   .usecase-grid,
-  .testimonial-grid,
   .footer-grid,
   .window-body {
     grid-template-columns: 1fr;
